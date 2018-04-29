@@ -1,4 +1,3 @@
 FROM java:alpine
-ARG PATH_TO_JAR_NAME
-COPY ./${PATH_TO_JAR_NAME} /app.jar
+COPY ./target/demoapp-0.0.1-SNAPSHOT.jar /app.jar
 ENTRYPOINT java -jar /app.jar
