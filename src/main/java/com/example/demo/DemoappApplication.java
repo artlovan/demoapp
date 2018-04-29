@@ -19,6 +19,6 @@ public class DemoappApplication {
 
 	@GetMapping(value = "get", produces = APPLICATION_JSON_VALUE)
 	public ResponseEntity<?> get() {
-		return new ResponseEntity<>("{\"msg\": \"hello!\"}", HttpStatus.OK);
+		return new ResponseEntity<>("{\"msg\": \"Spinnaker!\"}", HttpStatus.OK);
 	}
 }
